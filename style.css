@@ -1,0 +1,289 @@
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;
+
+  min-height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracking-app {
+  max-width: 80rem;
+  margin: 2.4rem;
+
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+.profile {
+  grid-row: 1 /-1;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 9px;
+}
+
+.profile-box {
+  background-color: hsl(246, 80%, 60%);
+  padding: 2.4rem;
+
+  border-radius: 9px;
+  padding-bottom: 4.8rem;
+}
+
+.image-box {
+  margin-bottom: 2.4rem;
+}
+
+.profile-img {
+  height: 5.8rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.report-text {
+  font-size: 1.2rem;
+  color: hsl(236, 100%, 87%);
+  margin-bottom: 0.4rem;
+}
+
+.profile-name {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.time-box {
+  padding: 2.4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  gap: 1.6rem;
+}
+
+.btn {
+  display: block;
+  border: none;
+  background: none;
+  color: hsl(235, 45%, 61%);
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+}
+
+/* REST OF THE TILE */
+.container-work {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 11px;
+}
+
+.container-play {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 11px;
+}
+
+.container-study {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 11px;
+}
+
+.container-exercise {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 11px;
+}
+
+.container-social {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 11px;
+}
+
+.container-care {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 11px;
+}
+
+.patter-box {
+  height: 3.2rem;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.pattern-img {
+  height: 5rem;
+  transform: translate(-25%, -11%);
+}
+
+.stats-box {
+  border-radius: 9px;
+  padding: 2.4rem;
+  background-color: hsl(235, 46%, 20%);
+
+  transition: all 0.2s;
+}
+
+.stats-box:hover {
+  cursor: pointer;
+  background-color: #2f3268;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1.8rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.dots {
+  width: 1.4rem;
+}
+
+.dots:hover {
+  filter: brightness(100);
+}
+
+.hours {
+  font-size: 3.6rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.ago {
+  font-size: 1rem;
+  color: hsl(236, 100%, 87%);
+}
+
+/* MEDIA QUERIES */
+
+/* Below 650px */
+
+@media (max-width: 41em) {
+  html {
+    font-size: 50%;
+  }
+
+  .report-text {
+    font-size: 1rem;
+  }
+
+  .profile-name {
+    font-size: 2.4rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .dots {
+    width: 1.2rem;
+  }
+
+  .hours {
+    font-size: 2.8rem;
+  }
+
+  .ago {
+    font-size: 0.9rem;
+  }
+}
+
+/* Below 480px */
+
+@media (max-width: 30em) {
+  .tracking-app {
+    max-width: 28rem;
+
+    grid-template-columns: 1fr;
+
+    /* flex-grow: 0; */
+  }
+
+  .profile-box {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    padding: 2.4rem;
+  }
+
+  .report-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .image-box {
+    margin-bottom: 0;
+  }
+
+  .time-box {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .tile-text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header {
+    margin-bottom: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .dots {
+    width: 1.4rem;
+  }
+
+  .hours {
+    margin-bottom: 0;
+  }
+
+  .ago {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tracking-app">
+      <!-- PROFILE TILE -->
+      <div class="profile">
+        <!-- containing name and profile -->
+        <div class="profile-box">
+          <div class="image-box">
+            <img
+              class="profile-img"
+              src="images/image-jeremy.png"
+              alt="profile image"
+            />
+          </div>
+
+          <div class="profile-text-box">
+            <p class="report-text">Report for</p>
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
+        </div>
+
+        <!-- time period box -->
+
+        <div class="time-box">
+          <button class="btn btn--daily">Daily</button>
+          <button class="btn btn--weekly active">Weekly</button>
+          <button class="btn btn--monthly">Monthly</button>
+        </div>
+      </div>
+
+      <!-- traking tiles -->
+
+      <!-- tile work -->
+      <div class="tile">
+        <div class="container-work">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-work.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Work</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">32hrs</p>
+              <p class="ago">Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tile play -->
+      <div class="tile">
+        <div class="container-play">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-play.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Play</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">10hrs</p>
+              <p class="ago">Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tile study -->
+      <div class="tile">
+        <div class="container-study">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-study.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Study</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">4hrs</p>
+              <p class="ago">Last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tile exercise -->
+      <div class="tile">
+        <div class="container-exercise">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-exercise.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Exercise</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">4hrs</p>
+              <p class="ago">Last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tile scoial -->
+      <div class="tile">
+        <div class="container-social">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-social.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Social</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">5hrs</p>
+              <p class="ago">Last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tile care -->
+      <div class="tile">
+        <div class="container-care">
+          <div class="patter-box">
+            <img
+              class="pattern-img"
+              src="images/icon-self-care.svg"
+              alt="pattern image"
+            />
+          </div>
+
+          <div class="stats-box">
+            <div class="header">
+              <p class="title">Self Care</p>
+
+              <div class="dots-box">
+                <img class="dots" src="images/icon-ellipsis.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="tile-text-box">
+              <p class="hours">2hrs</p>
+              <p class="ago">Last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
